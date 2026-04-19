@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+:root {
+    --primary: #FF8C00;
+    --gold: #D4AF37;
+    --secondary: #FFF7ED;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+.border-primary { border-color: var(--primary); }
+
+.card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item-active {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.gold-badge {
+    background: linear-gradient(135deg, #D4AF37 0%, #F5D176 100%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.animate-pop {
+    animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes pop {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+input, select, textarea {
+    background-color: #f9fafb;
+    transition: all 0.2s;
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.1);
+}
+
+#qr-reader__dashboard_section_csr button {
+    background-color: var(--primary) !important;
+    border-radius: 0.75rem !important;
+    color: white !important;
+    padding: 8px 16px !important;
+}
+
+/* Timeline Customization */
+.relative.pr-10::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    bottom: -24px;
+    width: 2px;
+    background: var(--secondary);
+}
+
+.relative.pr-10:last-child::after {
+    display: none;
+}
