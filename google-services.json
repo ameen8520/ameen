@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71222533194",
+    "project_id": "ameen-feebe",
+    "storage_bucket": "ameen-feebe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71222533194:android:d7c7f067788933106b1ab3",
+        "android_client_info": {
+          "package_name": "com.ameen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwhQVkD3jf3_YMZc2w_wv2BfN5bvW2ZgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
